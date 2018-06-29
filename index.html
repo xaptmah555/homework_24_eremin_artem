@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task_24</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+				<section class="top-line">
+				<img src="" alt="logo" class="logo__pic">
+				<h1 class="logo__text">illustrate.</h1>
+				<span class="logo__info">Graphic  Designer & Illustrator Creator</span>
+			</section>
+			<section class="nav">
+				<div class="hamburger hamburger--collapse">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+					<ul class="top-nav__list mobile">
+						<li class="top-nav__item">
+							<a href="#" class="top-nav__link">home/</a>
+						</li>
+						<li class="top-nav__item">
+							<a href="#" class="top-nav__link">about/</a>
+						</li>
+						<li class="top-nav__item">
+							<a href="#" class="top-nav__link">art/</a>
+						</li>
+						<li class="top-nav__item">
+							<a href="#" class="top-nav__link">work/</a>
+						</li>
+						<li class="top-nav__item">
+							<a href="#" class="top-nav__link">ill/</a>
+						</li>
+						<li class="top-nav__item">
+							<a href="#" class="top-nav__link">blog/</a>
+						</li>
+						<li class="top-nav__item">
+							<a href="#" class="top-nav__link">contact/</a>
+						</li>
+					</ul>
+					<form action="">
+						<input type="text" placeholder="SEARCH">
+						<input type="submit">
+					</form>
+			</section>
+		</div>
+	</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script>
+	var $hamburger = $(".hamburger");
+		$hamburger.on("click", function(e) {
+			$hamburger.toggleClass("is-active");
+			$(".mobile").toggleClass("show");
+		});
+	</script>
+</body>
+</html>
