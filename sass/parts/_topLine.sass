@@ -1,0 +1,101 @@
+.top-line
+	background: #353c3e
+
+.logo-Link
+	background: $secondColor
+	padding: rem(24px) rem(25px)
+	display: inline-block
+	border-bottom: 3px solid #d04e33
+	margin-right: 5px
+	&:hover
+		border-bottom: 3px solid #fff
+
+.logo__text
+	display: inline-block
+	+use-font($font, rem(24px), #fff, bold, rem(25px))
+	text-transform: uppercase
+	text-decoration: none
+	&:hover
+		color: $secondColor
+		text-decoration: underline
+
+.logo__info
+	+use-font($font, rem(13px), #959595, false, rem(22px))
+	font-style: italic
+	display: block
+	float: right
+	vertical-align: middle
+	padding-top: rem(30px)
+
+#form
+	background: #3c4345
+	border-bottom: 3px solid #040505
+	+tablet
+		border-bottom: none
+
+#form__search
+	width: rem(125px)
+	background: #3c4345
+	border: none
+	text-align: center
+	+use-font($font, rem(13px), #717b7e, false, rem(25px))
+
+#form__btm
+	background: #3c4345
+	vertical-align: middle
+	padding: rem(20.5px) rem(26px)
+	&:active
+		box-shadow: inset 0 0 4px rgba(0,0,0,0.5)
+
+.top-nav
+	+column(12/12)
+	text-align: right
+	background: #40494c
+	border-bottom: 3px solid #040505
+
+.top-nav
+
+	&__list
+		margin: 0
+		padding: 0
+
+	&__item
+		+tablet
+			display: inline-block
+			margin-left: 1rem
+
+	&__link
+		+use-font($font, rem(13px), #717b7e)
+		text-decoration: none
+		text-transform: uppercase
+		&:hover
+			color: $secondColor
+
+.mobile
+	position: absolute
+	background: #40494c
+	max-height: 0
+	width: 100%
+	left: 0
+	top: 32%
+	text-align: center
+	overflow: hidden
+	transition: .5s linear
+	z-index: 10
+	+phone
+		position: absolute
+		top: 23%
+
+	.top-nav__link
+		display: block
+		padding: 12px 0
+
+	+tablet
+		position: static
+		width: auto
+		overflow: auto
+		max-height: inherit
+		text-align: left
+
+.mobile.show
+	max-height: 400px
