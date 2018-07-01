@@ -1,0 +1,82 @@
+.main__head
+	+use-font($font, rem(20px), #777, false, rem(35px))
+	text-align: center
+	+tablet
+		+use-font($font, rem(24px), #777, false, rem(45px))
+
+.main__text
+	+use-font($font, rem(12px), #ccc, false, rem(25px))
+	text-align: center
+	padding: 0 40px
+	+tablet
+		+use-font($font, rem(12px), #ccc, false, rem(25px))
+		padding: 0 120px
+
+// blocks
+
+.blocks
+	text-align: left
+	+tablet
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+
+.blocks__item
+	width: 230px
+	height: auto
+	background: #fff
+	border-bottom: 3px solid #eaeaea
+	margin: 60px auto 0 auto
+
+	+phone
+		width: 60%
+	+tablet
+		width: 47%
+	+laptop
+		width: 22%
+
+.i1
+	background: #f6f6f6
+	border-bottom: none
+
+.i5
+	background: #f6f6f6
+	border-bottom: none
+
+.items__head
+	+use-font($font, rem(16px), #353c3e, false, rem(25px))
+	margin-top: 0
+
+.items__text
+	+use-font($font, rem(12px), $textColor, false, rem(21px))
+
+.blocks__pic
+	border-bottom: 3px solid $secondColor
+	width: 100%
+
+
+.blocks__img__head
+	+use-font($font, rem(16px), $secondColor, false, rem(25px))
+	margin-left: rem(40px)
+	margin-right: rem(40px)
+	margin-bottom: 0
+	padding-bottom: 15px
+
+.blocks__img__text
+	+use-font($font, rem(12px), $textColor, false, rem(21px))
+	margin-left: rem(40px)
+	margin-right: rem(40px)
+	margin-top: 0
+
+.blocks__img__date
+	+use-font($font-bold, rem(12px), #555, false, rem(21px))
+	margin-left: rem(40px)
+	margin-right: rem(40px)
+	margin-top: 0
+	margin-bottom: 0
+	padding-bottom: 15px

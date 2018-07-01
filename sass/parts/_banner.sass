@@ -3,12 +3,12 @@
 
 .main__banner
 	position: relative
-	background: url(../img/bannerBG.jpg) no-repeat center
+	background: url(../img/bannerBG.jpg) no-repeat
 	background-size: 100% 100%
 	padding: rem(20px) 0 rem(20px) 0
 	border: 5px solid #fff
-	max-width: 1226px
-	text-align: center
+	max-width: 1200px
+	margin: 0 auto
 	&:before
 		content: ''
 		position: absolute
@@ -18,6 +18,10 @@
 		height: 100%
 		display: block
 		background: rgba(255, 255, 255, .5)
+
+.main__banner
+	+tablet
+		padding: rem(31px) 0 rem(31px) 0
 
 .banner__info
 	position: relative
@@ -29,6 +33,12 @@
 	margin: 0 auto
 	border: 10px solid #f6f6f6
 	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .1)
+	+tablet
+		width: rem(510px)
+		height: rem(510px)
+		border: 20px solid #f6f6f6
+		box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .1)
+		
 
 .banner__head
 	+use-font($font-bold, rem(20px), #464646)
@@ -38,6 +48,10 @@
 	position: absolute
 	line-height: rem(20px)
 	z-inex: 10
+	+tablet
+		padding: 140px 65px 10px 65px
+		font-size: rem(51px)
+		line-height: rem(51px)
 
 .banner__head__color
 	color: $secondColor
@@ -45,3 +59,7 @@
 .banner__text
 	padding: 125px 10px 0 10px
 	font-size: 7px
+	+tablet
+		font-size: 13px
+		padding: 340px 58px 0 58px
+		line-height: rem(25px)
