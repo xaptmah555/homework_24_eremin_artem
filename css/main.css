@@ -739,7 +739,8 @@ body {
   font-size: 1rem;
   color: #353c3e;
   line-height: 1.5625rem;
-  margin-top: 0; }
+  margin-top: 0;
+  text-transform: uppercase; }
 
 .items__text {
   font-family: "Montserrat", sans-serif;
@@ -757,9 +758,10 @@ body {
   color: #f26c4f;
   line-height: 1.5625rem;
   margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  margin-right: 2.1875rem;
   margin-bottom: 0;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  text-transform: uppercase; }
 
 .blocks__img__text {
   font-family: "Montserrat", sans-serif;
@@ -779,6 +781,111 @@ body {
   margin-right: 2.5rem;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  text-transform: uppercase; }
+
+.about {
+  width: 100%;
+  margin-top: 26px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.about__item {
+  width: 48%; }
+  @media screen and (min-width: 768px) {
+    .about__item {
+      width: 95%; } }
+  @media screen and (min-width: 480px) {
+    .about__item {
+      width: 100%; } }
+
+.about__info {
+  width: 49%;
+  display: inline-block;
+  background: #fff;
+  border-bottom: 3px solid #eaeaea; }
+
+.about__head {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #f26c4f;
+  line-height: 1.5625rem;
+  margin-bottom: 0;
+  margin: 2.5rem 2.5rem 0 2.5rem; }
+
+.about__text__i1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  color: #8f8f8f;
+  line-height: 1.3125rem;
+  margin: 0.9375rem 2.5rem;
+  padding-bottom: 20px; }
+
+.about__text__i2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  color: #8f8f8f;
+  line-height: 1.3125rem;
+  margin: 0.9375rem 2.5rem;
+  padding-bottom: 37px; }
+
+.about__link__set {
+  text-align: center;
+  width: 49%;
+  border-bottom: 3px solid #e05d41;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 130px;
+  padding-bottom: 101px;
+  background: #f26c4f; }
+  @media screen and (min-width: 768px) {
+    .about__link__set {
+      padding-top: 86px;
+      padding-bottom: 61px; } }
+  @media screen and (min-width: 480px) {
+    .about__link__set {
+      padding-top: 92px;
+      padding-bottom: 77px; } }
+
+.about__link__photo {
+  text-align: center;
+  width: 49%;
+  border-bottom: 3px solid #000;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 130px;
+  padding-bottom: 101px;
+  background: #353c3e; }
+  @media screen and (min-width: 768px) {
+    .about__link__photo {
+      padding-top: 79px;
+      padding-bottom: 66px; } }
+  @media screen and (min-width: 480px) {
+    .about__link__photo {
+      padding-top: 90px;
+      padding-bottom: 76px; } }
+
+.item__photo {
+  padding: 100px; }
+  @media screen and (min-width: 768px) {
+    .item__photo {
+      padding: 57px 200px; } }
+  @media screen and (min-width: 480px) {
+    .item__photo {
+      padding: 57px; } }
+
+.item__custom {
+  padding: 100px; }
+  @media screen and (min-width: 768px) {
+    .item__custom {
+      padding: 57px 200px; } }
+  @media screen and (min-width: 480px) {
+    .item__custom {
+      padding: 57px; } }
 
 /*# sourceMappingURL=main.css.map */

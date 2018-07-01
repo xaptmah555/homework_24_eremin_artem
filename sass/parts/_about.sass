@@ -1,0 +1,91 @@
+.about
+	width: 100%
+	margin-top: 26px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+.about__item
+	width: 48%
+	+tablet
+		width: 95%
+	+phone
+		width: 100%
+
+
+.about__info
+	width: 49%
+	display: inline-block
+	background: #fff
+	border-bottom: 3px solid #eaeaea
+
+.about__head
+	+use-font($font, rem(16px), $secondColor, false, rem(25px))
+	margin-bottom: 0
+	margin: rem(40px) rem(40px) 0 rem(40px)
+
+.about__text__i1
+	+use-font($font, rem(12px), $textColor, false, rem(21px))
+	margin: rem(15px) rem(40px)
+	padding-bottom: 20px
+
+
+.about__text__i2
+	+use-font($font, rem(12px), $textColor, false, rem(21px))
+	margin: rem(15px) rem(40px)
+	padding-bottom: 37px
+
+
+
+.about__link__set
+	text-align: center
+	width: 49%
+	border-bottom: 3px solid #e05d41
+	display: inline-block
+	vertical-align: top
+	padding-top: 130px
+	padding-bottom: 101px
+	background: $secondColor
+	+tablet
+		padding-top: 86px
+		padding-bottom: 61px
+	+phone
+		padding-top: 92px
+		padding-bottom: 77px
+
+
+.about__link__photo
+	text-align: center
+	width: 49%
+	border-bottom: 3px solid #000
+	display: inline-block
+	vertical-align: top
+	padding-top: 130px
+	padding-bottom: 101px
+	background: #353c3e
+	+tablet
+		padding-top: 79px
+		padding-bottom: 66px
+	+phone
+		padding-top: 90px
+		padding-bottom: 76px
+
+
+
+.item__photo
+	padding: 100px
+	+tablet
+		padding: 57px 200px
+	+phone
+		padding: 57px
+
+.item__custom
+	padding: 100px
+	+tablet
+		padding: 57px 200px
+	+phone
+		padding: 57px
