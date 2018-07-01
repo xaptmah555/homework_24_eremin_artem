@@ -1,0 +1,47 @@
+.banner
+	margin-top: rem(87px)
+
+.main__banner
+	position: relative
+	background: url(../img/bannerBG.jpg) no-repeat center
+	background-size: 100% 100%
+	padding: rem(20px) 0 rem(20px) 0
+	border: 5px solid #fff
+	max-width: 1226px
+	text-align: center
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		display: block
+		background: rgba(255, 255, 255, .5)
+
+.banner__info
+	position: relative
+	width: rem(220px)
+	height: rem(220px)
+	background: #fff
+	border-radius: 50%
+	text-align: center
+	margin: 0 auto
+	border: 10px solid #f6f6f6
+	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, .1)
+
+.banner__head
+	+use-font($font-bold, rem(20px), #464646)
+	text-transform: uppercase
+	padding: 45px 10px 10px 10px
+	margin: 0
+	position: absolute
+	line-height: rem(20px)
+	z-inex: 10
+
+.banner__head__color
+	color: $secondColor
+
+.banner__text
+	padding: 125px 10px 0 10px
+	font-size: 7px
