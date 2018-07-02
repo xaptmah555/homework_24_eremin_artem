@@ -1,91 +1,97 @@
 .about
-	width: 100%
-	margin-top: 26px
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
+	margin-top: rem(26px)
 	display: flex
+	justify-content: space-around
+	flex-direction: column
 	flex-wrap: wrap
-	justify-content: space-between
-
-.about__item
-	width: 48%
-	+tablet
-		width: 95%
 	+phone
-		width: 100%
+		flex-direction: row
+		justify-content: space-between
 
+.about-block
+	+laptop
+		justify-content: left
 
-.about__info
-	width: 49%
-	display: inline-block
+.about-text__box
 	background: #fff
+	margin-bottom: 10px
+	padding: rem(43px) rem(56px) rem(11px) rem(41px)
 	border-bottom: 3px solid #eaeaea
+	+laptop
+		width: 19%
 
 .about__head
-	+use-font($font, rem(16px), $secondColor, false, rem(25px))
-	margin-bottom: 0
-	margin: rem(40px) rem(40px) 0 rem(40px)
+	+use-font($font, rem(16px), #f26c4f)
+	text-transform: uppercase
+	padding-top: rem(30px)
+	padding-bottom: rem(18px)
+	margin: 0
 
-.about__text__i1
-	+use-font($font, rem(12px), $textColor, false, rem(21px))
-	margin: rem(15px) rem(40px)
-	padding-bottom: 20px
-
-
-.about__text__i2
-	+use-font($font, rem(12px), $textColor, false, rem(21px))
-	margin: rem(15px) rem(40px)
-	padding-bottom: 37px
+.about-h
+	padding: 0
+	text-transform: none
 
 
 
-.about__link__set
-	text-align: center
-	width: 49%
+.about__text1
+	+use-font($font, rem(12px), #8f8f8f)
+
+.about-work__item
+	width: 100%
+	border-bottom: 3px solid #eaeaea
+	margin-bottom: 10px
+	background: #fff
+	+phone
+		width: 32%
+	+tablet
+		width: 31%
+	+laptop
+		width: 23%
+
+.about-bord
+	height: 247px
 	border-bottom: 3px solid #e05d41
-	display: inline-block
-	vertical-align: top
-	padding-top: 130px
-	padding-bottom: 101px
-	background: $secondColor
-	+tablet
-		padding-top: 86px
-		padding-bottom: 61px
-	+phone
-		padding-top: 92px
-		padding-bottom: 77px
+	background: #f26c4f
+	margin-right: 7px
 
+.about__height
+	+laptop
+		height: 247px
+	position: relative
 
-.about__link__photo
-	text-align: center
-	width: 49%
+.about__link
+	display: block
+	position: absolute
+	top: 50%
+	margin-top: -15px
+	left: 50%
+	margin-left: -15px
+	text-decoration: none
+	color: #fff
+	font-size: rem(30px)
+
+.about__box3
+	+laptop
+		width: 24%
+
+.caption__padding
+	padding: rem(43px) rem(10px) rem(10px) rem(15px)
+	+laptop
+		padding: rem(43px) rem(60px) rem(10px) rem(34px)
+
+.about__text2
+	+use-font($font, rem(12px), #8f8f8f)
+	+laptop
+		line-height: 21px
+
+.text__padding
+	margin: 0
+	padding: 0px rem(10px) rem(65px) rem(15px)
+	+laptop
+		padding: 0px rem(68px) rem(65px) rem(34px)
+		line-height: 17px
+
+.about-bord2
+	height: 247px
 	border-bottom: 3px solid #000
-	display: inline-block
-	vertical-align: top
-	padding-top: 130px
-	padding-bottom: 101px
 	background: #353c3e
-	+tablet
-		padding-top: 79px
-		padding-bottom: 66px
-	+phone
-		padding-top: 90px
-		padding-bottom: 76px
-
-
-
-.item__photo
-	padding: 100px
-	+tablet
-		padding: 57px 200px
-	+phone
-		padding: 57px
-
-.item__custom
-	padding: 100px
-	+tablet
-		padding: 57px 200px
-	+phone
-		padding: 57px
